@@ -20,7 +20,7 @@
 				<ul class="site-navigation">
 					<li><a href="studio.html">Студия</a></li>
 					<li><a href="customers.html">Клиенты</a></li>
-					<li><a href="catalog.html">Магазин</a></li>
+					<li><a class="site-navigation-active" href="catalog.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				
@@ -40,9 +40,34 @@
 			<div class="catalog-flex">	
 				<section class="filter">
 					<h2 class="visually-hidden">Фильтр товаров</h2>
-					<div class="filter-price-adjust">x-------x---</div>
-					<form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-						<fieldset>
+					
+					<form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+					
+						<fieldset class="filter-item-range">
+							<legend>Стоимость:</legend>
+							<div class="range-filter">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar" style="margin-left: 0; width: 70%"></div>
+										
+										<div class="toggle toggle-min"></div>
+										<div class="toggle toggle-max"></div>
+									</div>
+
+								</div>
+								
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+
+								</div>
+				
+							</div>
+						</fieldset>
+					
+					
+					
+						<fieldset class="filter-item">
 							<legend>Сетка:</legend>
 							<ul>
 								<li class="filter-options">
@@ -62,7 +87,7 @@
 						
 						</fieldset>
 						
-						<fieldset>
+						<fieldset class="filter-item-checkbox">
 							<legend>Особенности:</legend>
 							<ul>
 								<li class="filter-options">
@@ -130,64 +155,80 @@
 							<li class="catalog-item">
 								<div class="decor-header"></div>
 								
-								<img  src="img/nerds-illustration.png" width="360" height="208" alt="Nerds">
+								<img  src="img/sedona.jpg" width="358" height="576" alt="Sedona">
 								
+								<div class="catalog-item-hover-wrapper">
 									<div class="catalog-item-hover">
 										<h3 class="catalog-item-title">Sedona</h3>
-										<span class="catalog-item-description">Информационный сайт  для туристов</span>
+										<p class="catalog-item-description">Информационный сайт  для туристов</p>
 										<a class="catalog-item-link" href="catalog-item.html">9 900 руб.</a>	
 									</div>
-								
+								</div>
 							</li>
 							
 							<li class="catalog-item">
+								<div class="decor-header"></div>
 								
+								<img  src="img/pink.jpg" width="358" height="576" alt="Pink App">
+								<div class="catalog-item-hover-wrapper">
 									<div class="catalog-item-hover">
 										<h3 class="catalog-item-title">Pink App</h3>
-										<span class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</span>
+										<p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
 										<a class="catalog-item-link" href="catalog-item.html">9 900 руб.</a>	
 									</div>
-								
+								</div>
 							</li>
 							
 							<li class="catalog-item">	
+								<div class="decor-header"></div>
 								
+								<img  src="img/barbershop.jpg" width="358" height="576" alt="Barbershop">
+								<div class="catalog-item-hover-wrapper">
 									<div class="catalog-item-hover">
 										<h3 class="catalog-item-title">Barbershop</h3>
-										<span class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</span>
+										<p class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</p>
 										<a class="catalog-item-link" href="catalog-item.html">9 900 руб.</a>	
 									</div>
-								
+								</div>
 							</li>
 							
 							<li class="catalog-item">	
+								<div class="decor-header"></div>
 								
+								<img  src="img/mishka.jpg" width="358" height="576" alt="Mishka">
+								<div class="catalog-item-hover-wrapper">
 									<div class="catalog-item-hover">
 										<h3 class="catalog-item-title">Mishka</h3>
-										<span class="catalog-item-description">Интернет-магазин  вязаных игрушек</span>
+										<p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
 										<a class="catalog-item-link" href="catalog-item.html">9 900 руб.</a>	
 									</div>
-								
+								</div>
 							</li>
 							
 							<li class="catalog-item">
+								<div class="decor-header"></div>
 								
+								<img  src="img/aplus.jpg" width="358" height="576" alt="A plus">
+								<div class="catalog-item-hover-wrapper">
 									<div class="catalog-item-hover">
 										<h3 class="catalog-item-title">A plus</h3>
-										<span class="catalog-item-description">Лендинг курсов повышения квалификации</span>
+										<p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
 										<a class="catalog-item-link" href="catalog-item.html">9 900 руб.</a>	
 									</div>
-								
+								</div>
 							</li>
 							
 							<li class="catalog-item">
+								<div class="decor-header"></div>
 								
+								<img  src="img/kvast.jpg" width="358" height="576" alt="Кваст">
+								<div class="catalog-item-hover-wrapper">
 									<div class="catalog-item-hover">
 										<h3 class="catalog-item-title">Кваст</h3>
-										<span class="catalog-item-description">Промо-сайт производителя крафтового кваса</span>
+										<p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
 										<a class="catalog-item-link" href="catalog-item.html">9 900 руб.</a>	
 									</div>
-								
+								</div>
 							</li>
 										
 						</ul>
@@ -196,7 +237,7 @@
 							<li class="pagination-item pagination-item-current"><a>1</a></li>
 							<li class="pagination-item"><a href="#">2</a></li>
 							<li class="pagination-item"><a href="#">3</a></li>
-							<li class="pagination-item"><a href="#">Следующая</a></li>				
+							<li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>				
 						</ul>
 						
 						
@@ -221,7 +262,7 @@
 					<p class="contact-address-name">191186, Санкт-Петербург,<br>
 						ул. Б. Конюшенная, д. 19/8</p>
 					<p class="contact-address-phone">тел. +7 (812) 275-75-75</p>
-					<a class="button button-write-us" href="write.html">Напишите нам</a>	
+					<a class="button-write-us" href="write.html">Напишите нам</a>	
 				</div>
 			
 			
@@ -257,30 +298,33 @@
 			</section>
 		</footer>
 		
-		<section class="modal modal-contact  visually-hidden">
+		<section class="modal modal-contact visually-hidden">
 			<h2>Напишите нам</h2>				
 			
-			<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">			
-				<p>
-					<label class="contact-form-title" for="customer-name">Ваше имя:</label>
-					<input class="contact-form-name" id="customer-name" type="text" name="name" placeholder="Имя Фамилия">
-				</p>
+			<form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="contact-form-row">
+					<p>
+						<label class="contact-form-title" for="customer-name">Ваше имя:</label><br>
+						<input class="contact-form-name" id="customer-name" type="text" name="name" placeholder="Имя Фамилия">
+					</p>
+					
+					<p>
+						<label class="contact-form-title" for="customer-email">Ваш e-mail:</label><br>
+						<input class="contact-form-email" id="customer-email" type="email" name="email" placeholder="email@example.com">
+					</p>
+				</div>
 				
 				<p>
-					<label class="contact-form-title" for="customer-email">Ваш e-mail:</label>
-					<input class="contact-form-email" id="customer-email" type="email" name="email" placeholder="email@example.com">
+					<label class="contact-form-title" for="customer-message">Текст письма:</label><br>
+					
+					<input class="contact-form-message" id="customer-message" type="text" name="message" placeholder="В свободной форме" rows="4">
 				</p>
-				
-				<p>
-					<label class="contact-form-title" for="customer-message">Текст письма:</label>
-					<input class="contact-form-message" id="customer-message" type="text" name="message" placeholder="В свободной форме">
-				</p>
-				<button class="button" type="submit">Отправить</button>
+				<button class="button button-contact-form" type="submit">Отправить</button>
 			</form>
 			
 			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 		
-		
+		<script src="/js/script.js"></script>
 	</body>
 </html>
