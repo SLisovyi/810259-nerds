@@ -490,9 +490,8 @@ sup {
 .our-projects li:nth-child(4n):after {
 	display: none;	
 }
-.contact {
+.contact {	
 	position: relative;
-	
 	width: 100%;
 	height: 415px;
 	
@@ -502,15 +501,21 @@ sup {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
+.contact-wrapper {
+	
+	
+	width: 1200px;
+}
 .contact-address {
 	position: absolute;
 	box-sizing: border-box;
 	width: 320px;
 	
-	top: 13%;
-	left: 20%;
+	top: 55px;
+	left: 372px;
 	
-	padding-left: 48px;
+	padding-top: 50px;
+	padding-left: 50px;
 	background-color: #ffffff;	
 }
 .contact-address-title {
@@ -520,16 +525,18 @@ sup {
 	text-transform: uppercase;
 	
 	margin: 0;
-	margin-top: 47px;
 	margin-bottom: 20px;
 }
 .contact-address-name {
+	font-size: 16px;
+	line-height: 18px;
+	
 	margin: 0;
-	margin-bottom: 7px;
+	margin-bottom: 15px;
 }
 .contact-address-phone {
 	margin: 0;
-	margin-bottom: 34px;
+	margin-bottom: 35px;
 }
 .button-write-us {
 	font: inherit;
@@ -546,7 +553,7 @@ sup {
 	background-color: #fb565a;
 	border: none;
 	border-radius: 3px;	
-	padding: 16px 44px;
+	padding: 15px 43px;
 	margin-bottom: 47px;
 }
 .button-write-us:hover {
@@ -1098,6 +1105,11 @@ sup {
 }
 .pagination-item-current a:hover {
 	background-color: transparent;
+	box-shadow: none;
+}
+.pagination-item-current a:active {
+	background-color: transparent;
+	box-shadow: none;
 }
 .pagination-item-next a {
 	text-transform: uppercase;
