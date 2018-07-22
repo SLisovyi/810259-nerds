@@ -5,6 +5,7 @@ var close = document.querySelector(".modal-close");
 
 var login = popup.querySelector("[name=login]");
 
+
 link.addEventListener("click", function (evt) {   // добавили link действие нажатия мыши
 	evt.preventDefault();						// отменили действие по умолчанию
 	console.log("Click on write us buton");
@@ -17,3 +18,11 @@ close.addEventListener("click", function (evt) {
 	popup.classList.add("visually-hidden");
 });
 
+
+function validateForm() {
+    var x = document.forms["contact-form"]["name"].value;
+    if (x == "") {
+		document.forms["contact-form"]["name"].classList.add("error");
+        return false;
+    }
+} 
