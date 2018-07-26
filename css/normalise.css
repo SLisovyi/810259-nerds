@@ -4,6 +4,7 @@ html {
 }
 iframe{
     border-width: 0px;
+	width:100%;
 }
 
 body {
