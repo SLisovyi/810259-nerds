@@ -17,6 +17,21 @@
   display: none
 }
 
+.input-hidden:not(:focus):not(:active),
+input[type="checkbox"].input-hidden,
+input[type="radio"].input-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+
 .main-header {
   background-color: #eee
 }
@@ -45,12 +60,15 @@
   height: 65px;
   padding-top: 50px
 }
+
 .main-header-logo img:hover {
-  opacity: 0.8;
+  opacity: .8
 }
+
 .main-header-logo img:active {
-  opacity: 0.3;
+  opacity: .3
 }
+
 .site-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,7 +567,7 @@
 .contact iframe {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0
 }
 
 .container-contact {
@@ -558,7 +576,7 @@
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
-  height: 415px;
+  height: 415px
 }
 
 .contact-wrapper {
@@ -599,10 +617,11 @@
 .contact-address-phone {
   margin: 0;
   margin-bottom: 35px;
-  color: #666666;
+  color: #666666
 }
+
 .contact-address-phone a {
-  color: #666666;
+  color: #666666
 }
 
 .button-write-us {
@@ -690,9 +709,11 @@
 .social-button:active {
   background-color: #d7373b
 }
-.social-button svg:active {
-	opacity: 0.3
+
+.social-button:active svg {
+	opacity: .3
 }
+
 .footer-description {
   margin-top: 5px
 }
@@ -886,6 +907,17 @@
   color: #000
 }
 
+.filter-input:focus + label {
+  border-color:#9ecaed;
+  box-shadow:0 0 0px 2px #9ecaed;
+  border-radius: 2px
+}
+
+.filter-options:hover,
+.filter-options:focus {
+  color: #000
+}
+
 .filter-input:disabled + label {
   color: #283136;
   opacity: .3
@@ -1034,8 +1066,9 @@
   text-transform: uppercase;
   margin-right: 25px
 }
+
 .sort-button:active {
-  color: #000000;
+  color: #000000
 }
 
 .sort-button a:last-child {
@@ -1282,7 +1315,7 @@
   font: inherit;
   padding: 0 12px;
   margin-top: 6px;
-  height: 50px;
+  height: 50px
 }
 
 .contact-form-row {
