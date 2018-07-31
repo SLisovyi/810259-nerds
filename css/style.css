@@ -61,6 +61,12 @@ input[type="radio"].input-hidden {
   padding-top: 50px
 }
 
+.main-header-logo-index {
+  width: 160px;
+  height: 65px;
+  padding-top: 50px
+}
+
 .main-header-logo img:hover {
   opacity: .8
 }
